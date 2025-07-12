@@ -28,3 +28,22 @@ const myFunction = function () {
 console.log(typeof isLoggedIn);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// ********************Memory
+
+// Stack (use in primitive), Heap (use in non premitive)
+
+//Stack example:
+
+let myYoutubeName = 'Arqam';
+
+let anothername = myYoutubeName;
+anothername = 'Arqam Butt';
+console.log(anothername);
+
+//heap example:
+
+let userOne = { email: '123@gmail.com' };
+let userTwo = userOne;
+userTwo = { email: '12342@' };
+console.log(userTwo.email);
